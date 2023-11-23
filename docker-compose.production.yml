@@ -16,7 +16,7 @@ services:
     depends_on:
       - db
     volumes:
-      - static:/backend_static
+      - static:/collected_static
   frontend:
     image: eobgolts/taski_frontend
     command: cp -r /app/build/. /frontend_static/
